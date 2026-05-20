@@ -10,7 +10,6 @@
 </head>
 <body class="bg-black text-white overflow-x-hidden m-0 select-none min-h-dvh">
 
-    <!-- Video de portada optimizado -->
     <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none">
         <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_094145_4a271a6c-3869-4f1c-8aa7-aeb0cb227994.mp4" type="video/mp4">
     </video>
@@ -19,9 +18,8 @@
          style="mask-image: linear-gradient(to top, black 0%, transparent 45%); -webkit-mask-image: linear-gradient(to top, black 0%, transparent 45%);">
     </div>
 
-    <!-- Se cambió h-screen por h-dvh y se agregó overflow-y-auto en móviles para evitar cortes de contenido -->
-    <div class="relative w-full h-dvh flex flex-col justify-between z-10 overflow-y-auto md:overflow-hidden">
-        
+    <div class="relative w-full min-h-dvh landscape:h-auto flex flex-col justify-between z-10 overflow-y-visible md:overflow-hidden">
+
         <nav class="relative z-50 flex items-center justify-between w-full px-4 sm:px-6 md:px-12 py-4 md:py-6 shrink-0">
             <div class="animate-blur-fade-up flex items-center h-8 md:h-10 text-xl md:text-2xl font-bold tracking-wider" style="animation-delay: 0ms;">
                 Paraíso Viajero Travel
@@ -61,10 +59,9 @@
             </div>
         </div>
 
-        <!-- Se ajustó el padding inferior (pb-24 en móvil) para que la barra del celular no tape tus botones -->
         <div class="flex-1 flex flex-col justify-end w-full px-4 sm:px-6 md:px-12 pt-12 pb-24 md:pb-16 z-10">
             <div class="flex flex-col md:flex-row items-end justify-between gap-6 w-full">
-                
+
                 <div class="flex-1 max-w-4xl w-full">
                     <div class="animate-blur-fade-up flex flex-wrap items-center gap-3 sm:gap-6 mb-3 md:mb-6 text-xs sm:text-sm tracking-wide text-white/90" style="animation-delay: 300ms;">
                         <div class="flex items-center gap-1.5 font-medium">
@@ -83,7 +80,6 @@
                         </div>
                     </div>
 
-                    <!-- Reducción leve del tamaño de letra en móviles (text-3xl a text-2xl) para evitar saltos de línea bruscos -->
                     <h1 class="animate-blur-fade-up text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-white mb-3 md:mb-6 leading-[1.1]" style="animation-delay: 400ms; letter-spacing: -0.04em;">
                         Da el paso.<br>Viaja de forma inteligente.
                     </h1>
@@ -97,7 +93,7 @@
                             <i data-lucide="play" class="w-4 h-4 text-black fill-black"></i>
                             <span>Reservar Ahora</span>
                         </button>
-                        
+
                         <button class="animate-blur-fade-up rounded-full font-medium liquid-glass px-5 sm:px-8 py-2 sm:py-3 text-xs sm:text-base hover:bg-white/5 transition-colors" style="animation-delay: 700ms;">
                             Ver Detalles
                         </button>
